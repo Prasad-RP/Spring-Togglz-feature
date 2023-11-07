@@ -1,0 +1,14 @@
+togglz:
+  features:
+    # feature name  (by default false)
+    DISCOUNT_APPLIED:
+      enabled: false
+  #disable security for test    
+  console:
+    secured: false
+ 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'togglz'
